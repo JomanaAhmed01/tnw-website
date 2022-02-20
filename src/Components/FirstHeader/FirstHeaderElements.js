@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components"
 import { Search } from '@styled-icons/fluentui-system-filled/Search'
 import { Menu } from '@styled-icons/entypo/Menu'
-import SearchPage from './SearchPage'
 
 function FirstHeaderElements() {
   return (
