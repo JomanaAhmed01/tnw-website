@@ -1,8 +1,11 @@
 import React from "react";
+import FirstHeaderElements from '../Components/FirstHeader/FirstHeaderElements'
 
 function HeaderCompound() {
   return (
-    <>khbjjgvhj</>
+    <>
+      <FirstHeaderElements />
+    </>
   );
 }
 
