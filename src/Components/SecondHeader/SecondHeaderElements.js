@@ -5,7 +5,7 @@ import { KeyboardArrowRight } from '@styled-icons/material-outlined/KeyboardArro
 function SecondHeaderElements() {
   return (
     <Wrapper>
-      <Image src='./img/news-imgs/tnw-logo.png' />
+      <MainPageLink href='/'><Image src='./img/news-imgs/tnw-logo.png' /></MainPageLink>
 
       <Elements>
         <Link href='#'>Latest</Link>
@@ -40,6 +40,10 @@ export const Wrapper = styled.div`
     padding-right: 0px;
     /* margin-right: 30px; */
   }
+`
+
+export const MainPageLink = styled.a`
+  
 `
 
 export const Image = styled.img`
