@@ -6,7 +6,7 @@ import { Menu } from '@styled-icons/entypo/Menu'
 function FirstHeaderElements() {
   return (
     <Wrapper>
-      <Image src='./img/news-imgs/tnw-logo.png' />
+      <MainPageLink href="/"><Image src='./img/news-imgs/tnw-logo.png' /></MainPageLink>
 
       <LeftSideElements>
         <Link href="#">News</Link>
@@ -82,10 +82,18 @@ export const SearchIcon = styled(Search)`
   }
 `
 
+export const MainPageLink = styled.a`
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: initial;
+  }
+`
+
 export const Image = styled.img`
   display: none;
 
-   @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     display: initial;
     /* border: 3px solid black; */
     width: 70px;
