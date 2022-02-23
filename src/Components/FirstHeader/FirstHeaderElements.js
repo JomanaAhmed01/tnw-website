@@ -6,7 +6,7 @@ import { Menu } from '@styled-icons/entypo/Menu'
 function FirstHeaderElements() {
   return (
     <Wrapper>
-      {/* <Image src='./img/news-imgs/tnw-logo.png' /> */}
+      <Image src='./img/news-imgs/tnw-logo.png' />
 
       <LeftSideElements>
         <Link href="#">News</Link>
@@ -39,6 +39,7 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 1023px) {
     border: 1px solid red;
+    padding-left: 20px;
   }
 `
 
@@ -82,13 +83,14 @@ export const SearchIcon = styled(Search)`
 `
 
 export const Image = styled.img`
+  display: none;
 
-  /* display: none; */
-
-  /* @media screen and (max-width: 1023px) {
+   @media screen and (max-width: 1023px) {
     display: initial;
-    border: 3px solid black;
-  } */
+    /* border: 3px solid black; */
+    width: 70px;
+    height: 70px;
+  }
 `
 
 export const NewsLink = styled.a`
@@ -99,7 +101,6 @@ export const NewsLink = styled.a`
     text-decoration: none;
     color: #000000;
     font-size: 14px;
-    padding-left: 50px;
   }
 `
 
