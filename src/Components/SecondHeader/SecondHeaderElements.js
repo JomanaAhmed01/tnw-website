@@ -43,7 +43,9 @@ export const Wrapper = styled.div`
 `
 
 export const MainPageLink = styled.a`
-  
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `
 
 export const Image = styled.img`
