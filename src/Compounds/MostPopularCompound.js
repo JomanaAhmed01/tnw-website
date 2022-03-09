@@ -40,6 +40,11 @@ function MostPopular() {
 export const Header = styled.h3`
   /* border: 3px solid blue; */
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    text-align: left;
+    padding-left: 20px;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -48,13 +53,23 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   margin-top: 40px;
   width: 100%;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
 `
 
 export const StoryWrapper = styled.div`
-  /* border: 3px solid green; */
-  width: 236px;
+  border: 3px solid red;
+  width: 70%;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media screen and (max-width: 1023px) {
+    /* justify-content: space-around; */
+    /* display: flex; */
+    width: 90%;
+  }
 `
 
 export const ImageLink = styled.a`
@@ -62,23 +77,31 @@ export const ImageLink = styled.a`
 `
 
 export const Image = styled.img`
-  /* border: 3px solid red; */
+  border: 3px solid blue;
   width: 100%;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 1023px) {
+    width: 30%;
+  }
 `
 
 export const Text = styled.a`
-  /* border: 3px solid red; */
+  border: 3px solid green;
   width: 83%;
   color: #000000;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 
   :hover {
     text-decoration: underline;
     text-decoration-color: #ebadd6;
     text-decoration-thickness: 2px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 70%;
   }
 `
 
